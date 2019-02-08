@@ -1,0 +1,24 @@
+<idea-plugin>using the Gradle task test - in the Gradle Projects tool window open the Tasks directory and then the verification subdirectory. In the list that opens, double-click test to run your test.
+    <id>HelloWorld.project</id>using the Gradle task test - in the Gradle Projects tool window open the Tasks directory and then the verification subdirectory. In the list that opens, double-click test to run your test.
+    <name>Plugin display name here</name>
+    <vendor email="support@yourcompany.com" url="http://www.yourcompany.com">YourCompany</vendor>
+
+    <description><![CDATA[
+    Enter short description for your plugin here.<br>
+    <em>most HTML tags may be used</em>
+    ]]></description>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <!-- uncomment to enable plugin in all products
+    <depends>com.intellij.modules.lang</depends>
+    -->
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+    </actions>
+</idea-plugin>

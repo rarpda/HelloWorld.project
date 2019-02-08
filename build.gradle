@@ -1,0 +1,48 @@
+plugins {
+    id 'java'
+    id 'org.jetbrains.intellij' version '0.4.2'
+    id 'application'
+}
+
+mainClassName = "HelloWorld";
+
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
+
+intellij {
+    version '2018.3.3'
+}
+patchPluginXml {
+    changeNotes """
+      Add change notes here.<br>
+      <em>most HTML tags may be used</em>"""
+}
+
+task hello {
+    doLast{
+        println 'Hell'
+    }
+}
+
+//task about << {
+//    println 'Hi, I am the Gradle build file!'
+//}
+//
+//task buildAndRun(type: JavaExec,
+//        description: 'build then run'){
+//    dependsOn build
+//    main = 'HelloWorld'
+//    classpath = sourceSets.main.runtimeClasspath
+//    doLast{
+//        println "That's it folks!"
+//    }
+//}
