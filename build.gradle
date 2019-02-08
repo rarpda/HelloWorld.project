@@ -4,7 +4,7 @@ plugins {
     id 'application'
 }
 
-mainClassName = "HelloWorld";
+mainClassName = "HelloWorld"
 
 version '1.0-SNAPSHOT'
 
@@ -26,23 +26,3 @@ patchPluginXml {
       Add change notes here.<br>
       <em>most HTML tags may be used</em>"""
 }
-
-task hello {
-    doLast{
-        println 'Hell'
-    }
-}
-
-//task about << {
-//    println 'Hi, I am the Gradle build file!'
-//}
-//
-//task buildAndRun(type: JavaExec,
-//        description: 'build then run'){
-//    dependsOn build
-//    main = 'HelloWorld'
-//    classpath = sourceSets.main.runtimeClasspath
-//    doLast{
-//        println "That's it folks!"
-//    }
-//}

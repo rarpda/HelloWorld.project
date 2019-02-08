@@ -7,5 +7,9 @@ public class MyTest {
         Assert.assertEquals("Hello World", HelloWorld.print());
     }
 
+    @Test
+    public void wrongOutputCheck(){
+        Assert.assertEquals("Hello World!", HelloWorld.print());
+    }
 
 }
